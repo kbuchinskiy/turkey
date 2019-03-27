@@ -1,0 +1,68 @@
+.home {
+    background: url(../images/home-bg.jpg) center/cover no-repeat;
+}
+
+header {
+    max-width: 1255px;
+    margin: 25px auto 50px;
+
+    .items-container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p {
+        text-transform: uppercase;
+        font: 900 14px Montserrat;
+        color: #2e3a50;
+    }
+
+}
+
+.banner {
+    display: flex;
+    flex-flow: row nowrap;
+    color: #fff;
+
+    .items-container {
+        position: relative;
+    }
+
+
+    .theme-container {
+        position: absolute;
+        top: 110px;
+        width: 744px;
+        padding: 80px 0 80px 90px;
+        background-color: #8bccef;
+        @include theme-shadow;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 104px;
+            display: block;
+            width: 88px;
+            height: 3px;
+            background-color: #2e3a50;
+
+        }
+    }
+
+    h1 {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font: 900 40px Montserrat;
+    }
+
+    p {
+        margin: 50px 0;
+        font-size: 22px;
+    }
+
+    img {
+        margin-left: auto;
+        @include theme-shadow;
+    }
+}

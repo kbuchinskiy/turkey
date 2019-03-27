@@ -1,0 +1,29 @@
+main>section {
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.layout-wrapper {
+    width: 100%;
+    max-width: 1352px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.items-container {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.section-title {
+    margin: 90px auto 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font: bold 45px/1.1 Montserrat;
+}

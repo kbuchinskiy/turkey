@@ -1,0 +1,47 @@
+$theme-color: #fd691c;
+
+@mixin theme-shadow {
+    box-shadow: 27px 34px 44px 0px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Open Sans',
+        Arial,
+        Helvetica,
+        sans-serif;
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+a {
+    text-decoration: unset;
+}
+
+input,
+select {
+    outline: unset;
+}
+
+button,
+input[type=submit] {
+    border: unset;
+    outline: unset;
+    cursor: pointer;
+}
+
+.theme-btn {
+    display: block;
+    height: 55px;
+    padding: 1.4em 4em;
+    text-transform: uppercase;
+    font: 900 14px Montserrat;
+    letter-spacing: 0.2px;
+    line-height: 1;
+    color: #fff9e8;
+    background: linear-gradient(to right,
+        #2e3a50 0%,
+        #2e3a50 50%,
+        #6fa0bf 50%,
+        #6fa0bf 100%);
+}
