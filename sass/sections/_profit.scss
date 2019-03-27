@@ -1,0 +1,21 @@
+section.profit {
+    .description-container {
+        flex-basis: 50%;
+        padding-left: $left-indent;
+
+        .section-title {
+            max-width: 465px;
+            margin: 50px 0 60px;
+        }
+
+        p {
+            max-width: 500px;
+            margin-bottom: 68px;
+            font-size: 22px;
+        }
+    }
+
+    img {
+        @include theme-shadow;
+    }
+}

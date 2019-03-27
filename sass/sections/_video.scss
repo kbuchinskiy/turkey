@@ -1,0 +1,39 @@
+section.video {
+    .section-title {
+        margin-left: $left-indent;
+        max-width: 1000px;
+    }
+
+    .video-container {
+        position: relative;
+
+        .video {
+            z-index: 1;
+            position: relative;
+            border: 20px solid #fff9e8;
+            width: 1250px;
+            height: 630px;
+            background: url(../images/poster-video.jpg) center/cover no-repeat;
+
+            .play-video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100px;
+                height: 100px;
+                margin: -50px 0 0 -50px;
+                background: url(../images/icon-play.jpg) center/contain no-repeat;
+            }
+        }
+
+        .video-shadow {
+            position: absolute;
+            top: 65px;
+            left: $left-indent;
+            width: 1250px;
+            height: 630px;
+            background-color: #8bccef;
+            z-index: 0;
+        }
+    }
+}

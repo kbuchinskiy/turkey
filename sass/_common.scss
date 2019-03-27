@@ -1,4 +1,5 @@
 $theme-color: #fd691c;
+$left-indent: 97px;
 
 @mixin theme-shadow {
     box-shadow: 27px 34px 44px 0px rgba(0, 0, 0, 0.1);
@@ -9,7 +10,7 @@ body {
         Arial,
         Helvetica,
         sans-serif;
-    color: #333333;
+    color: #2e3a50;
     font-size: 18px;
     line-height: 1.3;
 }

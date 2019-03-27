@@ -1,0 +1,14 @@
+section.question {
+    .section-title {
+        margin-left: $left-indent;
+        max-width: 1000px;
+    }
+
+    .items-container {
+        padding: 0 $left-indent;
+        height: 815px;
+        background-color: #8bccef;
+        z-index: 0;
+
+    }
+}
