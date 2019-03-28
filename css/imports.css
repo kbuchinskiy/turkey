@@ -353,12 +353,59 @@ section.profit .description-container {
 section.profit img {
   box-shadow: 27px 34px 44px 0px rgba(0, 0, 0, 0.1); }
 
-section.question .section-title {
-  margin-left: 97px;
-  max-width: 1000px; }
-
-section.question .items-container {
-  padding: 0 97px;
-  height: 815px;
-  background-color: #8bccef;
-  z-index: 0; }
+section.question {
+  background: url(../images/question-bg.jpg) center/cover no-repeat; }
+  section.question .section-title {
+    margin-left: 97px;
+    max-width: 1000px; }
+  section.question .theme-container {
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 0 97px;
+    background-color: #8bccef;
+    z-index: 0; }
+    section.question .theme-container > .item {
+      width: 47%;
+      margin-top: -70px; }
+  section.question .sub-item {
+    overflow: hidden;
+    padding: 65px 0 85px; }
+    section.question .sub-item .number-container {
+      position: relative;
+      margin-left: -9%;
+      font: 140px/0.8 Montserrat;
+      letter-spacing: 0.02px; }
+      section.question .sub-item .number-container .number {
+        z-index: 1;
+        position: relative;
+        font-weight: 900; }
+      section.question .sub-item .number-container .number-shadow {
+        position: absolute;
+        top: -9px;
+        right: -19px;
+        color: #fff; }
+    section.question .sub-item .title {
+      margin-left: 10%;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 22px;
+      color: #fff; }
+    section.question .sub-item .description {
+      max-width: 440px;
+      margin: 30px 0 0 60px;
+      font-size: 16px;
+      color: #fff; }
+  section.question .sub-item-1 {
+    background: url(../images/question-bg-1.jpg) center/cover no-repeat;
+    margin-bottom: 70px; }
+  section.question .sub-item-2 {
+    background: url(../images/question-bg-2.jpg) center/cover no-repeat; }
+    section.question .sub-item-2 .description {
+      max-width: 400px; }
+  section.question .theme-container .item:last-child {
+    display: flex; }
+  section.question .sub-item-3 {
+    align-content: flex-end;
+    background: url(../images/question-bg-3.jpg) center/cover no-repeat; }
+    section.question .sub-item-3 .description {
+      max-width: 418px; }
