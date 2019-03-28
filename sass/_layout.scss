@@ -1,5 +1,4 @@
 main>section {
-    overflow: hidden;
     width: 100%;
     padding-bottom: 130px;
 }
@@ -24,5 +23,6 @@ main>section {
 .section-title {
     margin: 130px 0 75px;
     text-transform: uppercase;
-    font: 900 40px/1.1 Montserrat;
+    @include important-text(40px);
+    line-height: 1.1;
 }

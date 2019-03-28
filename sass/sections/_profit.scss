@@ -1,7 +1,7 @@
 section.profit {
     .description-container {
         flex-basis: 50%;
-        padding-left: $left-indent;
+        padding-left: $theme-indent;
 
         .section-title {
             max-width: 465px;
@@ -11,7 +11,6 @@ section.profit {
         p {
             max-width: 500px;
             margin-bottom: 68px;
-            font-size: 22px;
         }
     }
 

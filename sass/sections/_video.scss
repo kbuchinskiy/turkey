@@ -1,6 +1,8 @@
 section.video {
+    padding-bottom: 200px;
+
     .section-title {
-        margin-left: $left-indent;
+        margin-left: $theme-indent;
         max-width: 1000px;
     }
 
@@ -14,6 +16,7 @@ section.video {
             width: 1250px;
             height: 630px;
             background: url(../images/poster-video.jpg) center/cover no-repeat;
+            @include theme-shadow;
 
             .play-video {
                 position: absolute;
@@ -28,11 +31,12 @@ section.video {
 
         .video-shadow {
             position: absolute;
-            top: 65px;
-            left: $left-indent;
+            top: 80px;
+            left: $theme-indent;
             width: 1250px;
             height: 630px;
-            background-color: #8bccef;
+            background-color: $theme-color;
+            @include theme-shadow;
             z-index: 0;
         }
     }

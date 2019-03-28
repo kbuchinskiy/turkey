@@ -144,8 +144,12 @@ input[type="submit"],
 body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   color: #2e3a50;
-  font-size: 18px;
-  line-height: 1.3; }
+  font-size: 22px;
+  line-height: 1.3;
+  background: url(../images/bg-body.png) top center/100% 100% no-repeat; }
+
+strong {
+  font-weight: bold; }
 
 a {
   text-decoration: unset; }
@@ -167,12 +171,36 @@ input[type=submit] {
   text-transform: uppercase;
   font: 900 14px Montserrat;
   letter-spacing: 0.2px;
-  line-height: 1;
   color: #fff9e8;
   background: linear-gradient(to right, #2e3a50 0%, #2e3a50 50%, #6fa0bf 50%, #6fa0bf 100%); }
 
+.theme-form input:not([type=submit]),
+.theme-form select {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 0 7%;
+  border: 1px solid #2e3a50;
+  background: transparent;
+  text-transform: uppercase;
+  font: 900 14px Montserrat;
+  letter-spacing: 0.2px;
+  font-weight: normal; }
+
+.theme-form input::placeholder {
+  color: #2e3a50; }
+
+.theme-form select {
+  position: relative;
+  padding: 0 7%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent url(../images/arrow-select.png) 90% center/9px 7px no-repeat; }
+  .theme-form select option {
+    background-color: transparent; }
+
 main > section {
-  overflow: hidden;
   width: 100%;
   padding-bottom: 130px; }
 
@@ -193,7 +221,10 @@ main > section {
 .section-title {
   margin: 130px 0 75px;
   text-transform: uppercase;
-  font: 900 40px/1.1 Montserrat; }
+  text-transform: uppercase;
+  font: 900 40px Montserrat;
+  letter-spacing: 0.2px;
+  line-height: 1.1; }
 
 .popup-overlay {
   visibility: hidden;
@@ -263,6 +294,7 @@ main > section {
   margin-bottom: 0; }
 
 section.home {
+  overflow: hidden;
   background: url(../images/home-bg.jpg) center/cover no-repeat; }
 
 header {
@@ -272,9 +304,10 @@ header {
     justify-content: space-between;
     align-items: center; }
   header p {
-    text-transform: uppercase;
     text-align: right;
-    font: 900 14px Montserrat; }
+    text-transform: uppercase;
+    font: 900 14px Montserrat;
+    letter-spacing: 0.2px; }
 
 .banner {
   display: flex;
@@ -301,43 +334,48 @@ header {
   .banner h1 {
     margin-bottom: 50px;
     text-transform: uppercase;
-    font: 900 40px Montserrat; }
+    text-transform: uppercase;
+    font: 900 40px Montserrat;
+    letter-spacing: 0.2px;
+    line-height: 1.2; }
   .banner p {
-    margin: 50px 0;
-    font-size: 22px; }
+    margin: 50px 0; }
   .banner img {
     margin-left: auto;
     box-shadow: 27px 34px 44px 0px rgba(0, 0, 0, 0.1); }
 
-section.video .section-title {
-  margin-left: 97px;
-  max-width: 1000px; }
-
-section.video .video-container {
-  position: relative; }
-  section.video .video-container .video {
-    z-index: 1;
-    position: relative;
-    border: 20px solid #fff9e8;
-    width: 1250px;
-    height: 630px;
-    background: url(../images/poster-video.jpg) center/cover no-repeat; }
-    section.video .video-container .video .play-video {
+section.video {
+  padding-bottom: 200px; }
+  section.video .section-title {
+    margin-left: 97px;
+    max-width: 1000px; }
+  section.video .video-container {
+    position: relative; }
+    section.video .video-container .video {
+      z-index: 1;
+      position: relative;
+      border: 20px solid #fff9e8;
+      width: 1250px;
+      height: 630px;
+      background: url(../images/poster-video.jpg) center/cover no-repeat;
+      box-shadow: 27px 34px 44px 0px rgba(0, 0, 0, 0.1); }
+      section.video .video-container .video .play-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin: -50px 0 0 -50px;
+        background: url(../images/icon-play.jpg) center/contain no-repeat; }
+    section.video .video-container .video-shadow {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 100px;
-      height: 100px;
-      margin: -50px 0 0 -50px;
-      background: url(../images/icon-play.jpg) center/contain no-repeat; }
-  section.video .video-container .video-shadow {
-    position: absolute;
-    top: 65px;
-    left: 97px;
-    width: 1250px;
-    height: 630px;
-    background-color: #8bccef;
-    z-index: 0; }
+      top: 80px;
+      left: 97px;
+      width: 1250px;
+      height: 630px;
+      background-color: #8bccef;
+      box-shadow: 27px 34px 44px 0px rgba(0, 0, 0, 0.1);
+      z-index: 0; }
 
 section.profit .description-container {
   flex-basis: 50%;
@@ -347,34 +385,40 @@ section.profit .description-container {
     margin: 50px 0 60px; }
   section.profit .description-container p {
     max-width: 500px;
-    margin-bottom: 68px;
-    font-size: 22px; }
+    margin-bottom: 68px; }
 
 section.profit img {
   box-shadow: 27px 34px 44px 0px rgba(0, 0, 0, 0.1); }
 
 section.question {
-  background: url(../images/question-bg.jpg) center/cover no-repeat; }
+  background: url(../images/question-bg.jpg) top center/100% 72% no-repeat;
+  padding: 135px 0 180px; }
   section.question .section-title {
-    margin-left: 97px;
+    margin: 0 0 135px 97px;
     max-width: 1000px; }
   section.question .theme-container {
-    align-items: stretch;
-    justify-content: space-between;
-    padding: 0 97px;
+    z-index: 0;
+    position: relative;
+    padding: 0 97px 100px;
     background-color: #8bccef;
-    z-index: 0; }
-    section.question .theme-container > .item {
+    box-shadow: 27px 34px 44px 0px rgba(0, 0, 0, 0.1); }
+  section.question .items-container:not(.sub-item) {
+    align-items: stretch;
+    justify-content: space-between; }
+    section.question .items-container:not(.sub-item) > .item {
       width: 47%;
       margin-top: -70px; }
   section.question .sub-item {
     overflow: hidden;
-    padding: 65px 0 85px; }
+    padding: 65px 0 85px;
+    box-shadow: 27px 34px 44px 0px rgba(0, 0, 0, 0.1); }
     section.question .sub-item .number-container {
       position: relative;
       margin-left: -9%;
-      font: 140px/0.8 Montserrat;
-      letter-spacing: 0.02px; }
+      text-transform: uppercase;
+      font: 900 140px Montserrat;
+      letter-spacing: 0.2px;
+      line-height: 0.8; }
       section.question .sub-item .number-container .number {
         z-index: 1;
         position: relative;
@@ -388,7 +432,6 @@ section.question {
       margin-left: 10%;
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 22px;
       color: #fff; }
     section.question .sub-item .description {
       max-width: 440px;
@@ -409,3 +452,143 @@ section.question {
     background: url(../images/question-bg-3.jpg) center/cover no-repeat; }
     section.question .sub-item-3 .description {
       max-width: 418px; }
+  section.question .theme-btn {
+    position: relative;
+    margin: -28px auto 0; }
+
+section.julia .image-container {
+  position: relative;
+  padding-left: 97px; }
+  section.julia .image-container img {
+    z-index: 1;
+    position: relative;
+    border: 20px solid #fff9e8;
+    box-shadow: 27px 34px 44px 0px rgba(0, 0, 0, 0.1); }
+  section.julia .image-container .image-shadow {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 607px;
+    height: 776px;
+    box-shadow: 27px 34px 44px 0px rgba(0, 0, 0, 0.1);
+    background-color: #8bccef;
+    z-index: 0; }
+
+section.julia .description-container {
+  flex-basis: 46%;
+  padding-left: 97px; }
+  section.julia .description-container .section-title {
+    max-width: 500px;
+    margin: 50px 0 25px; }
+  section.julia .description-container h4 {
+    margin-bottom: 38px;
+    text-transform: uppercase;
+    font-size: 22px; }
+  section.julia .description-container p {
+    max-width: 500px;
+    margin-bottom: 68px; }
+
+section.places .section-title {
+  margin-left: 97px; }
+
+section.places .items-container {
+  justify-content: space-between;
+  padding: 0 97px; }
+  section.places .items-container .item {
+    width: 47%;
+    background-color: #8bccef; }
+
+section.places .top-block {
+  overflow: hidden;
+  display: flex;
+  align-items: baseline;
+  margin: 45px 0 45px; }
+  section.places .top-block .number-container {
+    position: relative;
+    margin-left: -10px;
+    text-transform: uppercase;
+    font: 900 140px Montserrat;
+    letter-spacing: 0.2px;
+    line-height: 0.8; }
+    section.places .top-block .number-container .number {
+      z-index: 1;
+      position: relative;
+      font-weight: 900; }
+    section.places .top-block .number-container .number-shadow {
+      position: absolute;
+      top: -9px;
+      right: -19px;
+      color: #fff; }
+  section.places .top-block .month {
+    margin-left: 10px;
+    text-transform: uppercase;
+    font: 900 40px Montserrat;
+    letter-spacing: 0.2px; }
+  section.places .top-block .city {
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff; }
+
+section.places .building {
+  margin-left: 50px;
+  text-transform: uppercase;
+  color: #fff; }
+
+section.places .theme-btn {
+  margin: 70px 0 -28px 50px; }
+
+section.form {
+  overflow: hidden;
+  background: url(../images/form-bg.jpg) center/cover no-repeat; }
+  section.form .layout-wrapper {
+    padding: 0 97px; }
+  section.form .section-title {
+    margin-bottom: 0; }
+  section.form .note {
+    margin: 50px 0; }
+  section.form .items-container {
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 50px; }
+  section.form .item {
+    width: 21.5%;
+    position: relative; }
+
+footer {
+  padding: 100px 0;
+  background-color: #2e3a50; }
+  footer .items-container {
+    align-items: center;
+    justify-content: space-between; }
+  footer h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font: 900 40px Montserrat;
+    letter-spacing: 0.2px;
+    color: #fff; }
+  footer .socials {
+    justify-content: space-between; }
+    footer .socials a {
+      display: flex;
+      width: 80px;
+      height: 80px;
+      margin-right: 40px;
+      background: #8bccef; }
+      footer .socials a:hover img {
+        transform: scale(1.1); }
+      footer .socials a img {
+        margin: auto;
+        transition: transform .3s; }
+  footer .links {
+    text-align: right;
+    text-transform: uppercase;
+    color: #fff; }
+    footer .links > a {
+      display: block;
+      margin-bottom: 20px; }
+    footer .links a {
+      color: #fff;
+      font-weight: bold; }
+      footer .links a:hover {
+        text-decoration: underline; }

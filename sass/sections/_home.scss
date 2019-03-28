@@ -1,4 +1,5 @@
 section.home {
+    overflow: hidden;
     background: url(../images/home-bg.jpg) center/cover no-repeat;
 }
 
@@ -12,9 +13,8 @@ header {
     }
 
     p {
-        text-transform: uppercase;
         text-align: right;
-        font: 900 14px Montserrat;
+        @include important-text(14px);
     }
 
 }
@@ -33,8 +33,8 @@ header {
         position: absolute;
         top: 110px;
         width: 744px;
-        padding: 80px 0 80px $left-indent;
-        background-color: #8bccef;
+        padding: 80px 0 80px $theme-indent;
+        background-color: $theme-color;
         @include theme-shadow;
 
         &::before {
@@ -53,12 +53,12 @@ header {
     h1 {
         margin-bottom: 50px;
         text-transform: uppercase;
-        font: 900 40px Montserrat;
+        @include important-text(40px);
+        line-height: 1.2;
     }
 
     p {
         margin: 50px 0;
-        font-size: 22px;
     }
 
     img {
