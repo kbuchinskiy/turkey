@@ -18,6 +18,13 @@ section.video {
             background: url(../images/poster-video.jpg) center/cover no-repeat;
             @include theme-shadow;
 
+
+            iframe {
+                display: none;
+                height: 100%;
+                width: 100%;
+            }
+
             .play-video {
                 position: absolute;
                 top: 50%;

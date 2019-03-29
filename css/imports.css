@@ -359,6 +359,10 @@ section.video {
       height: 630px;
       background: url(../images/poster-video.jpg) center/cover no-repeat;
       box-shadow: 27px 34px 44px 0px rgba(0, 0, 0, 0.1); }
+      section.video .video-container .video iframe {
+        display: none;
+        height: 100%;
+        width: 100%; }
       section.video .video-container .video .play-video {
         position: absolute;
         top: 50%;
