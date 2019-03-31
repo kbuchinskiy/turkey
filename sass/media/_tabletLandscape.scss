@@ -1,1 +1,273 @@
-@media screen and (max-width: $tablet-landscape) {}
+@media screen and (max-width: $tablet-landscape) {
+
+    body {
+        font-size: 18px;
+    }
+
+    $resolution-indent: 7%;
+
+    main>section {
+        padding-bottom: 80px;
+    }
+
+    .section-title {
+        margin: 80px 0 40px;
+        font-size: 30px;
+    }
+
+    header {
+        padding: 0 $resolution-indent;
+    }
+
+    .banner {
+        h1 {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin: 25px 0;
+        }
+
+        .theme-container {
+            top: 40px;
+            width: 74%;
+            padding-left: $resolution-indent;
+
+            &::before {
+                left: -20px;
+                width: 55px;
+            }
+        }
+
+        .home-image {
+            width: 80%;
+        }
+    }
+
+    section.video {
+        padding-bottom: 150px;
+
+        .section-title {
+            max-width: 80%;
+            margin-left: $resolution-indent;
+        }
+
+        .video-container {
+
+            .video,
+            .video-shadow {
+                width: 100% - $resolution-indent;
+                height: 550px;
+            }
+
+            .video {
+
+                .play-video {
+                    width: 80px;
+                    height: 80px;
+                    margin: -40px 0 0 -40px;
+                }
+            }
+
+            .video-shadow {
+                top: 60px;
+                left: $resolution-indent;
+            }
+        }
+    }
+
+    section.profit {
+        .description-container {
+            padding-left: $resolution-indent;
+
+            .section-title {
+                max-width: 465px;
+                margin: 0 0 30px;
+            }
+
+            p {
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    section.question {
+
+        padding-top: 100px;
+        padding-bottom: 110px;
+
+        .section-title {
+            margin: 0 0 150px $resolution-indent;
+            max-width: 70%;
+        }
+
+        .theme-container {
+            padding: 0 $resolution-indent 100px;
+        }
+
+        .sub-item {
+
+            .number-container {
+                @include important-text(100px);
+                line-height: 0.8;
+
+
+                .number-shadow {
+                    top: -6px;
+                    right: -14px;
+                }
+            }
+
+            .title {
+                font-size: 0.8em;
+            }
+
+            .description {
+                margin: 30px $resolution-indent 0;
+                font-size: 14px;
+            }
+        }
+    }
+
+    section.julia {
+        .image-container {
+            flex-basis: 50%;
+            padding-left: $resolution-indent;
+
+            .julia-image {
+                width: 90%;
+            }
+
+            .image-shadow {
+                top: 60px;
+                width: 80%;
+                height: 100%;
+            }
+        }
+
+        .description-container {
+            flex-basis: 50%;
+            padding-left: $resolution-indent;
+
+            .section-title {
+                margin: 0 0 25px;
+            }
+
+            h4 {
+                margin-bottom: 48px;
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 28px;
+            }
+        }
+    }
+
+    section.places {
+        padding-bottom: 130px;
+
+        .section-title {
+            margin-left: $resolution-indent;
+        }
+
+        .items-container {
+            padding: 0 $resolution-indent;
+
+            .item {
+                width: 47%;
+            }
+        }
+
+        .top-block {
+            margin: 35px 0;
+            flex-wrap: wrap;
+
+            .number-container {
+                margin-left: -5px;
+                @include important-text(100px);
+
+
+                .number-shadow {
+                    top: -6px;
+                    right: -9px;
+                }
+            }
+
+            .month {
+                margin-left: 10px;
+                @include important-text(30px);
+            }
+
+            .city {
+                flex-basis: 100%;
+                margin-right: 5%;
+                text-align: right;
+            }
+
+        }
+
+        .building {
+            margin-left: 20px;
+        }
+
+        .theme-btn {
+            margin: 70px auto -28px auto;
+        }
+    }
+
+    section.form {
+
+
+        .layout-wrapper {
+            padding: 0 $resolution-indent;
+        }
+
+        .note {
+            margin: 40px 0;
+        }
+
+        .items-container {
+            margin-bottom: 0;
+        }
+
+        .item {
+            width: 43%;
+            margin-bottom: 30px;
+        }
+
+        .items-container .item:last-child {
+            margin: 40px auto 0;
+        }
+
+        input {
+            width: 100%;
+        }
+
+    }
+
+    footer {
+
+        padding: 100px 4%;
+
+        .layout-wrapper {
+            padding: 0 $resolution-indent;
+        }
+
+        .socials {
+            a {
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+
+                .social-image {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}

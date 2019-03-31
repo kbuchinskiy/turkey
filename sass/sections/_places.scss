@@ -1,5 +1,7 @@
 section.places {
 
+    padding-bottom: 200px;
+
     .section-title {
         margin-left: $theme-indent;
     }
@@ -34,8 +36,9 @@ section.places {
 
             .number-shadow {
                 position: absolute;
-                top: -9px;
-                right: -19px;
+                top: -8px;
+                right: -12px;
+                font-weight: normal;
                 color: #fff;
             }
         }
@@ -59,8 +62,6 @@ section.places {
         text-transform: uppercase;
         color: #fff;
     }
-
-
 
 
     .theme-btn {

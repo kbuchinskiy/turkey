@@ -4,7 +4,7 @@ section.home {
 }
 
 header {
-    max-width: 1255px;
+    max-width: 1170px;
     margin: 25px auto 50px;
 
     .items-container {
@@ -32,7 +32,7 @@ header {
     .theme-container {
         position: absolute;
         top: 110px;
-        width: 744px;
+        width: 55%;
         padding: 80px 0 80px $theme-indent;
         background-color: $theme-color;
         @include theme-shadow;
@@ -46,7 +46,6 @@ header {
             width: 88px;
             height: 3px;
             background-color: #2e3a50;
-
         }
     }
 
@@ -61,7 +60,7 @@ header {
         margin: 50px 0;
     }
 
-    img {
+    .home-image {
         margin-left: auto;
         @include theme-shadow;
     }

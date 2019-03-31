@@ -1,1 +1,248 @@
-@media screen and (max-width: $mobile-large) {}
+@media screen and (max-width: $mobile-large) {
+    $resolution-indent: 3%;
+
+    body {
+        font-size: 14px;
+    }
+
+    main>section {
+        padding-bottom: 50px;
+    }
+
+    .section-title {
+        margin: 40px 0 20px;
+        font-size: 20px;
+    }
+
+    .theme-btn {
+        font-size: 12px;
+        padding: 0.1em 0;
+        width: 240px;
+    }
+
+    header {
+        padding: 0;
+        margin-bottom: 30px;
+
+        .items-container {
+            flex-direction: column;
+        }
+
+        img.logo {
+            margin-bottom: 30px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 13px;
+        }
+
+    }
+
+    .banner {
+        h1 {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin: 25px 0;
+        }
+
+        .theme-container {
+            position: relative;
+            width: 100%;
+            padding: 20px;
+            padding-left: $resolution-indent;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .home-image {
+            display: none;
+        }
+
+        .theme-btn {
+            margin: 0 auto;
+        }
+    }
+
+    section.video {
+        padding-bottom: 100px;
+
+        .section-title {
+            margin-left: $resolution-indent;
+        }
+
+        .video-container {
+
+            .video {
+                border-width: 10px;
+
+                .play-video {
+                    width: 40px;
+                    height: 40px;
+                    margin: -20px 0 0 -20px;
+                }
+            }
+
+            .video,
+            .video-shadow {
+                width: 100% - $resolution-indent;
+                height: 200px;
+            }
+
+            .video-shadow {
+                top: 15px;
+                left: $resolution-indent;
+            }
+        }
+    }
+
+    section.profit {
+
+        .description-container {
+            padding-left: $resolution-indent;
+
+            .section-title {
+                max-width: 70%;
+            }
+        }
+
+
+    }
+
+    section.question {
+        padding-top: 60px;
+        padding-bottom: 70px;
+
+        .section-title {
+            margin: 0 0 120px $resolution-indent;
+            max-width: 80%;
+        }
+
+        .theme-container {
+            padding: 0 $resolution-indent 50px;
+
+            >.items-container {
+
+                .sub-item {
+                    padding: 45px 0 25px;
+                }
+            }
+        }
+
+
+        .sub-item {
+
+            .title {
+                margin-left: 20px;
+            }
+
+            .description {
+                margin: 30px 20px 0;
+            }
+        }
+    }
+
+    section.julia {
+        .items-container {
+            flex-direction: column;
+        }
+
+        .image-container {
+            padding-left: $resolution-indent;
+            margin-bottom: 50px;
+
+            .julia-image {
+                width: 100%;
+                border-width: 10px;
+            }
+
+            .image-shadow {
+                top: 40px;
+                width: 93%;
+                height: 93%;
+            }
+        }
+
+        .theme-btn {
+            margin: 0 auto;
+        }
+
+    }
+
+    section.places {
+        padding-bottom: 60px;
+
+        .section-title {
+            margin-left: $resolution-indent;
+        }
+
+        .items-container {
+            flex-direction: column;
+            padding: 0 $resolution-indent;
+
+            .item {
+                width: 100%;
+                margin-bottom: 70px;
+            }
+        }
+
+        .theme-btn {
+            margin: 70px auto -28px auto;
+            font-size: 12px;
+        }
+    }
+
+    section.form {
+
+        .layout-wrapper {
+            padding: 0 $resolution-indent;
+        }
+
+        .items-container {
+            flex-direction: column;
+
+            .item {
+                width: 100%;
+            }
+        }
+    }
+
+    footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .layout-wrapper {
+            padding: 0;
+
+            >.items-container {
+                flex-direction: column;
+            }
+        }
+
+
+        .socials {
+            margin-bottom: 30px;
+            text-align: center;
+
+            a {
+                width: 30px;
+                height: 30px;
+                margin-right: 15px;
+
+                .social-image {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+        }
+
+        .links {
+            text-align: center;
+        }
+    }
+}

@@ -1,4 +1,8 @@
 section.profit {
+    .items-container {
+        justify-content: space-between;
+    }
+
     .description-container {
         flex-basis: 50%;
         padding-left: $theme-indent;
@@ -14,7 +18,7 @@ section.profit {
         }
     }
 
-    img {
+    .profit-image {
         @include theme-shadow;
     }
 }

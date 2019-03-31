@@ -1,1 +1,208 @@
-@media screen and (max-width: $tablet-portrait) {}
+@media screen and (max-width: $tablet-portrait) {
+    $resolution-indent: 5%;
+
+    body {
+        font-size: 16px;
+    }
+
+    .section-title {
+        margin: 80px 0 40px;
+        font-size: 25px;
+    }
+
+    header {
+        padding: 0 $resolution-indent;
+    }
+
+    .banner {
+        h1 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin: 25px 0;
+        }
+
+        .theme-container {
+            top: 20px;
+            padding-left: $resolution-indent;
+
+            &::before {
+                left: -20px;
+                width: 40px;
+            }
+        }
+
+        .home-image {
+            width: 90%;
+        }
+    }
+
+    section.video {
+        padding-bottom: 150px;
+
+        .section-title {
+            margin-left: $resolution-indent;
+        }
+
+        .video-container {
+
+            .video,
+            .video-shadow {
+                width: 100% - $resolution-indent;
+                height: 400px;
+            }
+
+            .video-shadow {
+                top: 40px;
+                left: $resolution-indent;
+            }
+        }
+    }
+
+    section.profit {
+
+        .description-container {
+            flex-basis: 100%;
+            padding-left: $resolution-indent;
+
+            .section-title {
+                max-width: 100%;
+            }
+        }
+
+        .profit-image {
+            display: none;
+        }
+
+        .theme-btn {
+            margin: 0 auto;
+        }
+    }
+
+    section.question { 
+        background-size: 100% 80%;
+        $section-indent: 35px;
+
+        padding-top: 70px;
+        padding-bottom: 110px;
+
+        .section-title {
+            margin: 0 0 120px $resolution-indent;
+            max-width: 70%;
+        }
+
+        .theme-container {
+            padding: 0 $resolution-indent 100px;
+
+            >.items-container {
+                flex-direction: column;
+
+                .item:not(.sub-item) {
+                    width: 100%;
+                }
+
+                .item:not(.sub-item):last-child {
+                    margin-top: 0;
+                }
+
+                .sub-item {
+                    width: 100%;
+                    padding: 65px 0 45px;
+                    margin-bottom: $section-indent;
+                }
+            }
+        }
+
+
+        .sub-item {
+
+            .title {
+                font-size: 1.1em;
+            }
+
+            .description {
+                margin: 30px $resolution-indent 0;
+                font-size: 16px;
+            }
+        }
+    }
+
+    section.julia {
+        .items-container {
+            align-items: center;
+        }
+
+        .image-container {
+            padding-left: $resolution-indent;
+
+
+            .image-shadow {
+                top: 60px;
+                width: 80%;
+                height: 93%;
+            }
+        }
+
+        .description-container {
+            flex-basis: 50%;
+            padding-left: $resolution-indent;
+
+
+            h4 {
+                margin-bottom: 28px;
+            }
+        }
+    }
+
+    section.places {
+        padding-bottom: 130px;
+
+        .section-title {
+            margin-top: 30px;
+            margin-left: $resolution-indent;
+        }
+
+        .items-container {
+            padding: 0 $resolution-indent;
+        }
+
+        .top-block {
+
+            .month {
+                margin-left: 10px;
+                @include important-text(30px);
+            }
+
+        }
+
+        .theme-btn {
+            margin: 70px auto -28px auto;
+            font-size: 13px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+
+    section.form {
+
+        .layout-wrapper {
+            padding: 0 $resolution-indent;
+        }
+    }
+
+    footer {
+        .socials {
+            a {
+                width: 40px;
+                height: 40px;
+
+                .social-image {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}

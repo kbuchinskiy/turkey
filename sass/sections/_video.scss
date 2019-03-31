@@ -9,12 +9,17 @@ section.video {
     .video-container {
         position: relative;
 
+        .video,
+        .video-shadow {
+            width: 92.4%;
+            height: 630px;
+        }
+
         .video {
             z-index: 1;
             position: relative;
             border: 20px solid #fff9e8;
-            width: 1250px;
-            height: 630px;
+
             background: url(../images/poster-video.jpg) center/cover no-repeat;
             @include theme-shadow;
 
@@ -40,8 +45,6 @@ section.video {
             position: absolute;
             top: 80px;
             left: $theme-indent;
-            width: 1250px;
-            height: 630px;
             background-color: $theme-color;
             @include theme-shadow;
             z-index: 0;

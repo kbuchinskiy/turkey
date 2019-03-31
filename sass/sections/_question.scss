@@ -48,11 +48,13 @@ section.question {
                 position: absolute;
                 top: -9px;
                 right: -19px;
+                font-weight: normal;
                 color: #fff;
             }
         }
 
         .title {
+            max-width: 60%;
             margin-left: 10%;
             text-transform: uppercase;
             font-weight: bold;
@@ -70,10 +72,18 @@ section.question {
     .sub-item-1 {
         background: url(../images/question-bg-1.jpg) center/cover no-repeat;
         margin-bottom: $section-indent;
+
+        .title {
+            max-width: 60%;
+        }
     }
 
     .sub-item-2 {
         background: url(../images/question-bg-2.jpg) center/cover no-repeat;
+
+        .title {
+            max-width: 56%;
+        }
 
         .description {
             max-width: 400px;
@@ -87,6 +97,10 @@ section.question {
     .sub-item-3 {
         align-content: flex-end;
         background: url(../images/question-bg-3.jpg) center/cover no-repeat;
+
+        .title {
+            max-width: 60%;
+        }
 
         .description {
             max-width: 418px;

@@ -5,11 +5,12 @@ footer {
     .items-container {
         align-items: center;
         justify-content: space-between;
+        max-width: 1170px;
+        margin: 0 auto;
     }
 
-    h2 {
-        margin-bottom: 30px;
-        @include important-text(40px);
+    .section-title {
+        margin: 0 0 30px 0;
         color: #fff;
     }
 
@@ -24,15 +25,19 @@ footer {
             margin-right: 40px;
             background: $theme-color;
 
-            &:hover img {
+            &:hover .social-image {
                 transform: scale(1.1);
             }
 
-            img {
+            &:last-child {
+                margin: 0;
+            }
+
+            .social-image {
+                object-fit: contain;
                 margin: auto;
                 transition: transform .3s;
             }
-
 
         }
     }
