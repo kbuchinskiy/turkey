@@ -1,15 +1,11 @@
 $laptop: 1600px;
 $tablet-landscape: 1024px;
 $tablet-portrait: 768px;
-$mobile-large-landscape: 767px;
 $mobile-large: 500px;
-$mobile-medium: 424px;
 $mobile-small: 374px;
 
 @import "media/_laptop.scss";
 @import "media/_tabletLandscape.scss";
 @import "media/_tabletPortrait.scss";
-@import "media/_mobileLargeLandscape.scss";
 @import "media/_mobileLarge.scss";
-@import "media/_mobileMedium.scss";
-@import "media/_mobileSmall.scss";
+@import "media/_mobileSmall.scss"; 

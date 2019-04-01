@@ -78,7 +78,7 @@
 
         .video-container {
 
-            .video {
+            #video {
                 border-width: 10px;
 
                 .play-video {
@@ -88,7 +88,7 @@
                 }
             }
 
-            .video,
+            #video,
             .video-shadow {
                 width: 100% - $resolution-indent;
                 height: 200px;
@@ -205,11 +205,16 @@
 
         .items-container {
             flex-direction: column;
+            align-items: center;
 
             .item {
-                width: 100%;
+                width: 90%;
             }
-        }
+
+            input:not([type=submit]), select{
+                height: 50px;
+            } 
+        } 
     }
 
     footer {

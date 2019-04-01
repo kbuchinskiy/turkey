@@ -55,13 +55,13 @@
 
         .video-container {
 
-            .video,
+            #video,
             .video-shadow {
                 width: 100% - $resolution-indent;
                 height: 550px;
             }
 
-            .video {
+            #video {
 
                 .play-video {
                     width: 80px;

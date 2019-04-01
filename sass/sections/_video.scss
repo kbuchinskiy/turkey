@@ -9,13 +9,13 @@ section.video {
     .video-container {
         position: relative;
 
-        .video,
+        #video,
         .video-shadow {
             width: 92.4%;
             height: 630px;
         }
 
-        .video {
+        #video {
             z-index: 1;
             position: relative;
             border: 20px solid #fff9e8;
@@ -25,7 +25,6 @@ section.video {
 
 
             iframe {
-                display: none;
                 height: 100%;
                 width: 100%;
             }
