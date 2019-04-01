@@ -15,8 +15,7 @@ footer {
     }
 
     .socials {
-        justify-content: space-between;
-
+        display: flex;
 
         a {
             display: flex;
@@ -26,7 +25,7 @@ footer {
             background: $theme-color;
 
             &:hover .social-image {
-                transform: scale(1.1);
+                transform: scale(1.05);
             }
 
             &:last-child {
