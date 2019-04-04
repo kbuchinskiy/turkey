@@ -1,42 +1,47 @@
 @media screen and (max-width: $laptop) {
+  main > section {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 
-    main>section {
-        padding-left: 4%;
-        padding-right: 4%;
+  section.profit {
+    .description-container {
+      .section-title {
+        margin: 15px 0 60px;
+      }
     }
 
-    section.profit {
-        .description-container {
-
-            .section-title {
-                margin: 15px 0 60px;
-            }
-        }
-
-        .profit-image {
-            width: 47%;
-        }
+    .profit-image {
+      width: 47%;
     }
+  }
 
-    section.question {
-        padding-left: 4%;
-        padding-right: 4%;
+  section.question {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  section.julia .description-container {
+    flex-basis: 43%;
+  }
+
+  section.places .top-block .city {
+    margin-left: 14px;
+  }
+  section.form {
+    .items-container {
+        
+      .item:last-child {
+        width: fit-content;
+      }
     }
+  }
 
-    section.julia .description-container {
-        flex-basis: 43%;
+  footer {
+    padding: 100px 4%;
+
+    .layout-wrapper {
+      padding: 0 $theme-indent;
     }
-
-    section.places .top-block .city {
-        margin-left: 14px;
-    }
-
-    footer {
-        padding: 100px 4%;
-
-        .layout-wrapper {
-            padding: 0 $theme-indent;
-        }
-    }
-
+  }
 }
